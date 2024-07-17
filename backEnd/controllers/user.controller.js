@@ -11,7 +11,7 @@
         if(!user){
             return res.status(404).json({message : "user not found"});
         }
-        res.stutus(200).json(user);
+        res.status(200).json(user);
     } catch (error) {
         console.log("Error in getUserProfile : ",error.message);
         res.status(500).json({error:error.message});
